@@ -1,12 +1,26 @@
+enum class Color {
+	RED,
+	BLUE,
+	GREEN,
+	NONE
+}
 fun main(args: Array<String>) {
-	val color = "RED"
+	val colors = arrayOf(Color.RED, Color.BLUE, Color.GREEN, Color.NONE)
 		
-	when (color) {
-		"RED" -> {
-			println("Color is ${color}!")
-		}
-		else -> {
-			println("Color is None...")
+	for (color in colors) {
+		when (color) {
+			Color.RED -> {
+				println("Color is ${color}!")
+			}
+			Color.BLUE -> {
+				println("Color is ${color}!?")
+			}
+			Color.GREEN -> {
+				println("Color is ${color}??")
+			}
+			else -> {
+				println("Color is None...")
+			}
 		}
 	}
 }
