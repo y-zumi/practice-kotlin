@@ -6,7 +6,8 @@ enum class Color {
 }
 fun main(args: Array<String>) {
 	val colors = arrayOf(Color.RED, Color.BLUE, Color.GREEN, Color.NONE)
-
+	val person = Person("Yunosuke")
+	person.printName()
 	for (color in colors) {
 		when (color) {
 			Color.RED -> {
